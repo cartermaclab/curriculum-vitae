@@ -1,0 +1,638 @@
+---
+name: Michael J.
+surname: Carter
+position: "Assistant Professor | Sensorimotor Control & Learning"
+address: "Department of Kinesiology, Faculty of Science, McMaster University"
+phone: +1 905 525 9140 x20391
+www: www.cartermaclab.org
+email: "michaecarter@mcmaster.ca"
+twitter: cartermaclab
+github: cartermaclab
+orcid: 0000-0002-0675-4271
+date: "Last update: `r format(Sys.time(), '%B %Y')`"
+#headcolor: ffa300 #orange
+#headcolor: 6acad8 #blue
+headcolor: 414141
+output: vitae::awesomecv
+always_allow_html: yes
+header-includes:
+  \usepackage{longtable}
+  \usepackage{multicol}
+  \usepackage{colortbl}
+  \arrayrulecolor{white}
+  \usepackage{hhline}
+  \definecolor{light-gray}{gray}{0.95}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(tidyverse)
+library(vitae)
+library(emojifont)
+library(fontawesome)
+library(kableExtra)
+library(huxtable)
+```
+
+# Research Interests
+
+Decision-making for action; Human-robot and Human-human interactions; Neuroeconomics of action control; Feedback; Aging; Metascience
+
+# Education
+
+```{r}
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Centre for Neuroscience Studies, Queen's University", "2016-17", "Postdoctoral Fellowship", "Kingston ON, Canada",
+  "School of Human Kinetics, University of Ottawa", "2011-16", "Ph.D in Human Kinetics", "Ottawa ON, Canada",
+  "Department of Physical Education & Kinesiology, Brock University", "2008-11", "M.Sc. in Kinesiology", "St. Catharines ON, Canada",
+  "Department of Physical Education & Kinesiology, Brock University", "2004-08", "B.Ph.Ed (Honours)", "St. Catharines ON, Canada",
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where,)
+```
+
+# Professional Organizations
+
+Canadian Society for Psychomotor Learning & Sport Psychology (SCAPPS); Society for Transparency, Openness, & Replication in Kinesiology (STORK); Society for the Neural Control of Movement (NCM); North American Society for the Psychology of Sport & Physical Activity (NASPSPA)
+
+# Employment History
+
+```{r}
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Department of Kinesiology, McMaster University", "2017-Present", "Assistant Professor", "Hamilton ON, Canada",
+  "Centre for Neuroscience Studies, Queen's University", "2016-17", "Postdoctoral Fellow", "Kingston ON, Canada",
+  "School of Kinesiology and Health Studies, Queen's University", "2016-17", "Teaching Adjunct Professor", "Kingston ON, Canada",
+  "School of Human Kinetics, University of Ottawa", "2012-16", "Part-time Professor", "Ottawa ON, Canada",
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where,)
+```
+
+# Trainees
+
+## Masters
+
+```{r}
+tibble(
+  Years = c(rep("2019-21", 2)),
+  Name = c("*Mirette Mounir (SSHRC CGS-M)", "*Rajbir Sidhu (NSERC CGS-M)"),
+  Program = c(rep("Kinesiology", 2)),
+  Status = c(rep("Completed", 2)),
+  #English = cell_spec(c("C2","C1","C2","C2"), 'latex', color = '#009acd'), # #009acd
+  #French = cell_spec(c("B2","B2","B2","B2"), 'latex', color = '#009acd'), # #4cb8dc
+) %>%
+  kbl(format = "latex", booktabs = TRUE, align = 'l', escape = F, longtable = TRUE) %>%
+  kable_styling(bootstrap_options = c("hover", "condensed"), position = "left", full_width = F, font_size = 9, latex_options = c("hold_position", "repeat_header")) %>%
+  footnote(
+    footnote_as_chunk = T,
+    general_title = " ",
+    general = "\\\\tiny *Denotes trainee holds external funding",
+    escape = F
+  ) %>%
+  row_spec(row = 0, bold = TRUE) %>% 
+  column_spec(column = 1, width = '1.5cm') %>%
+  column_spec(column = 2, width = '5cm') %>% 
+  column_spec(column = 3:4, width = "3cm")
+  # add_header_above(' ', line = F) %>%
+  # row_spec(0:4, extra_latex_after = "\\arrayrulecolor{white}") 
+```
+
+## Doctoral
+
+```{r}
+tibble(
+  Years = c(rep("2018-", 2)),
+  Name = c("*Laura St. Germain (NSERC PGS-D)", "Kyung-Hyun (Ruth) Kim"),
+  Program = c("Kinesiology", "Psychology"),
+  Status = c(rep("In Progress", 2)),
+  #English = cell_spec(c("C2","C1","C2","C2"), 'latex', color = '#009acd'), # #009acd
+  #French = cell_spec(c("B2","B2","B2","B2"), 'latex', color = '#009acd'), # #4cb8dc
+) %>%
+  kbl(format = "latex", booktabs = TRUE, align = 'l', escape = F, longtable = TRUE) %>%
+  kable_styling(bootstrap_options = c("hover", "condensed"), position = "left", full_width = F, font_size = 9, latex_options = c("hold_position", "repeat_header")) %>%
+  footnote(
+    footnote_as_chunk = T,
+    general_title = " ",
+    general = "\\\\tiny *Denotes trainee holds external funding",
+    escape = F
+  ) %>%
+  row_spec(row = 0, bold = TRUE) %>% 
+  column_spec(column = 1, width = '1.5cm') %>%
+  column_spec(column = 2, width = '5cm') %>% 
+  column_spec(column = 3:4, width = "3cm")
+  # add_header_above(' ', line = F) %>%
+  # row_spec(0:4, extra_latex_after = "\\arrayrulecolor{white}") 
+```
+
+# Lifetime Research Funding
+
+## Current
+
+[4]. 2018-23, **Carter MJ**. *Establishment of the Memory Action, & Cognition laboratory for the study of human sensorimotor neuroscience*. Ontario Research Fund-Research Infrastructure, $127,514 total over 5 years.
+
+[3]. 2018-23, **Carter MJ**. *Establishment of the Memory Action, & Cognition laboratory for the study of human sensorimotor neuroscience*. Canadian Foundation for Innovation John R. Evans Leaders Fund, $127,514 total over 5 years.
+
+[2]. 2018-2023, **Carter MJ**. *Decision-making and assignment policies in sensorimotor neuroscience*. Natural Sciences & Engineering Research Council of Canada Discovery Grant, $149,000 total over 5 years.
+
+[1]. 2017, **Carter MJ**. Research startup funds from McMaster University, $1000,000 total (no expiry date).
+
+<!-- &nbsp; -->
+
+## Previous
+
+[1]. 2018-19, **Carter MJ**. *Decision-making and assignment policies in sensorimotor neuroscience*. Natural Sciences & Engineering Research Council of Canada Discovery Launch Supplement Early Career Researcher, $12,500 total over 1 year.
+
+# Honours, Awards, Scholarships
+
+2016, Dean’s Award, University of Ottawa, $3000.
+
+2015, Michael Smith Foreign Study Supplement, Natural Sciences & Engineering Research Council of Canada, $6000.
+
+2014, Franklin Henry Young Scientist Award (Motor Control and Learning), Canadian Society for Psychomotor Learning & Sport Psychology, $300.
+
+2013-15, Alexander Graham Bell Canada Graduate Scholarship (Doctoral), Natural Sciences & Engineering Research Council of Canada, $70,000.
+
+2009-10, Frederick Banting and Charles Best Canada Graduate Scholarship (Masters), Canadian Institutes of Health Research, $17,500.
+
+2009-10, Ontario Graduate Scholarship (Masters), Province of Ontario, $15,000 - [Declined]
+
+2008, Undergraduate Student Research Award, Brock University, $3250
+
+2008, Graduated with First-Class Standing, Brock University
+
+# Scholarly and Professional Activities
+
+## Grant, scholarship & award committees
+
+```{r}
+tibble(
+  Years = c("2019", "2019", "2012-13"),
+  Role = c(rep("Reviewer", 3)),
+  Name = c("Canadian Society for Psychomotor Learning and Sport Psychology Franklin
+Henry Young Scientist Award", "Ontario Women’s Health Scholarship", "University of Ottawa Faculty of Health Sciences Research Funding"),
+  #English = cell_spec(c("C2","C1","C2","C2"), 'latex', color = '#009acd'), # #009acd
+  #French = cell_spec(c("B2","B2","B2","B2"), 'latex', color = '#009acd'), # #4cb8dc
+) %>%
+  kbl(format = "latex", booktabs = TRUE, align = 'l', escape = F, longtable = TRUE) %>%
+  kable_styling(bootstrap_options = c("hover", "condensed"), position = "left", full_width = F, font_size = 9, latex_options = c("hold_position", "repeat_header")) %>%
+  row_spec(row = 0, bold = TRUE) %>% 
+  column_spec(column = 3, width = '15cm')
+  # add_header_above(' ', line = F) %>%
+  # row_spec(0:4, extra_latex_after = "\\arrayrulecolor{white}") 
+```
+
+## Ad hoc journal referee
+
+Biological Psychology; Canadian Journal of Experimental Psychology; Clinical Neurophysiology; Experimental Brain Research; Human Movement Science; Journal of Learning & Instruction; Journal of Motor Behavior; Journal of Motor Learning & Development; Journal of Sport Sciences; Perceptual & Motor Skills; Psychological Research; Psychology of Sport & Exercise; Research Quarterly for Exercise & Sport
+
+## External grant reviews
+```{r}
+tibble(
+  Years = "2019-20",
+  Role = "Reviewer",
+  Name = "Natural Sciences and Engineering Research Council of Canada 2020 Discovery
+Grant Competition, Biological Systems and Functions",
+  #English = cell_spec(c("C2","C1","C2","C2"), 'latex', color = '#009acd'), # #009acd
+  #French = cell_spec(c("B2","B2","B2","B2"), 'latex', color = '#009acd'), # #4cb8dc
+) %>%
+  kbl(format = "latex", booktabs = TRUE, align = 'l', escape = F, longtable = TRUE) %>%
+  kable_styling(bootstrap_options = c("hover", "condensed"), position = "left", full_width = F, font_size = 9, latex_options = c("hold_position", "repeat_header")) %>%
+  row_spec(row = 0, bold = TRUE) %>% 
+  column_spec(column = 3, width = '15cm')
+  # add_header_above(' ', line = F) %>%
+  # row_spec(0:4, extra_latex_after = "\\arrayrulecolor{white}") 
+```
+
+# Teaching
+
+## Undergraduate
+```{r}
+tibble(
+  Years = c("2022-Present", "2018-Present", "2016-17", "2015-16", "2012-16"),
+  Institution = c(rep("McMaster University", 2), "Queen's University", rep("University of Ottawa", 2)),
+  Course = c("Human Robotics", "Motor Control and Learning", "Motor Learning and Control", "Psychomotor Behaviour Lab", "Motor Control and Learning"),
+  #English = cell_spec(c("C2","C1","C2","C2"), 'latex', color = '#009acd'), # #009acd
+  #French = cell_spec(c("B2","B2","B2","B2"), 'latex', color = '#009acd'), # #4cb8dc
+) %>%
+  kbl(format = "latex", booktabs = TRUE, align = 'l', escape = F, longtable = TRUE) %>%
+  kable_styling(bootstrap_options = c("hover", "condensed"), position = "left", full_width = F, font_size = 9, latex_options = c("hold_position", "repeat_header")) %>%
+  row_spec(row = 0, bold = TRUE) %>% 
+  column_spec(column = 3, width = '15cm')
+  # add_header_above(' ', line = F) %>%
+  # row_spec(0:4, extra_latex_after = "\\arrayrulecolor{white}") 
+```
+
+## Graduate
+```{r}
+tibble(
+  Years = c(rep("2018-Present", 2)),
+  Institution = c(rep("McMaster University", 2)),
+  Course = c("Statistical Methods in Kinesiology", "Motor Control"),
+  #English = cell_spec(c("C2","C1","C2","C2"), 'latex', color = '#009acd'), # #009acd
+  #French = cell_spec(c("B2","B2","B2","B2"), 'latex', color = '#009acd'), # #4cb8dc
+) %>%
+  kbl(format = "latex", booktabs = TRUE, align = 'l', escape = F, longtable = TRUE) %>%
+  kable_styling(bootstrap_options = c("hover", "condensed"), position = "left", full_width = F, font_size = 9, latex_options = c("hold_position", "repeat_header")) %>%
+  row_spec(row = 0, bold = TRUE) %>% 
+  column_spec(column = 3, width = '15cm')
+  # add_header_above(' ', line = F) %>%
+  # row_spec(0:4, extra_latex_after = "\\arrayrulecolor{white}") 
+```
+
+# Supervisory committees
+
+## Masters
+
+```{r}
+tibble(
+  Years = c("2020-", rep("2019-", 2), "2018", rep("2018-20", 2), rep("2017-19", 4)),
+  Name = c("Karishma Ramdeo", "Kristen DeMelo", "Noah Erskine", "Patrick Dans", "Ashley Flemington", "Jacqueline Brillantes", "Mitchell Locke", "Stephen Toepp", "Stevie Foglia", "Kumara Somasundram"),
+  Program = c(rep("Kinesiology", 10)),
+  Status = c(rep("In Progress", 3), rep("Completed", 7)),
+  #English = cell_spec(c("C2","C1","C2","C2"), 'latex', color = '#009acd'), # #009acd
+  #French = cell_spec(c("B2","B2","B2","B2"), 'latex', color = '#009acd'), # #4cb8dc
+) %>%
+  kbl(format = "latex", booktabs = TRUE, align = 'l', escape = F, longtable = TRUE) %>%
+  kable_styling(bootstrap_options = c("hover", "condensed"), position = "left", full_width = F, font_size = 9, latex_options = c("hold_position", "repeat_header")) %>%
+  row_spec(row = 0, bold = TRUE) %>% 
+  column_spec(column = 1, width = '1.5cm') #%>%
+  #column_spec(column = 2:4, width = "3.5cm")
+  # add_header_above(' ', line = F) %>%
+  # row_spec(0:4, extra_latex_after = "\\arrayrulecolor{white}") 
+```
+
+## Doctoral
+
+```{r}
+tibble(
+  Years = c("2019", rep("2018-", 2), "2017-19"),
+  Name = c("Stephen Toepp", "Chantal Carillo", "Claire Tuckey", "Jessica Cappelletto"),
+  Program = c("Kinesiology", "Psychology", rep("Kinesiology", 2)),
+  Status = c(rep("In Progress", 3), "Completed"),
+  #English = cell_spec(c("C2","C1","C2","C2"), 'latex', color = '#009acd'), # #009acd
+  #French = cell_spec(c("B2","B2","B2","B2"), 'latex', color = '#009acd'), # #4cb8dc
+) %>%
+  kbl(format = "latex", booktabs = TRUE, align = 'l', escape = F, longtable = TRUE) %>%
+  kable_styling(bootstrap_options = c("hover", "condensed"), position = "left", full_width = F, font_size = 9, latex_options = c("hold_position", "repeat_header")) %>%
+  row_spec(row = 0, bold = TRUE) %>% 
+  column_spec(column = 1, width = '1.5cm') #%>%
+  #column_spec(column = 2:4, width = "3.5cm")
+  # add_header_above(' ', line = F) %>%
+  # row_spec(0:4, extra_latex_after = "\\arrayrulecolor{white}") 
+```
+
+# Examination Committees
+
+## External examiner
+```{r}
+tibble(
+  Year = c("2020", rep("2018", 3), rep("2017", 2)),
+  Name = c("Molly Brillanger", "Stephanie Reischel", "Jenin El-Sayes", "Lana Pfaff", "Claire Tuckey", "Hunter Fassett"),
+  Degree = c(rep("M.Sc", 6)),
+  Program = c(rep("Kinesiology", 6)),
+  Institution = c(rep("Brock University", 2), "McMaster University", "Laurier University", "Brock University", "McMaster University"),
+  #English = cell_spec(c("C2","C1","C2","C2"), 'latex', color = '#009acd'), # #009acd
+  #French = cell_spec(c("B2","B2","B2","B2"), 'latex', color = '#009acd'), # #4cb8dc
+) %>%
+  kbl(format = "latex", booktabs = TRUE, align = 'l', escape = F, longtable = TRUE) %>%
+  kable_styling(bootstrap_options = c("hover", "condensed"), position = "left", full_width = F, font_size = 9, latex_options = c("hold_position", "repeat_header")) %>%
+  row_spec(row = 0, bold = TRUE) %>% 
+  column_spec(column = 1, width = '1.5cm') #%>%
+  #column_spec(column = 2:4, width = "3.5cm")
+  # add_header_above(' ', line = F) %>%
+  # row_spec(0:4, extra_latex_after = "\\arrayrulecolor{white}") 
+```
+
+## Internal examiner
+```{r}
+tibble(
+  Year = "2018",
+  Name = "Denver Brown",
+  Degree = "Ph.D",
+  Program = "Kinesiology",
+  Institution = "McMaster University",
+  #English = cell_spec(c("C2","C1","C2","C2"), 'latex', color = '#009acd'), # #009acd
+  #French = cell_spec(c("B2","B2","B2","B2"), 'latex', color = '#009acd'), # #4cb8dc
+) %>%
+  kbl(format = "latex", booktabs = TRUE, align = 'l', escape = F, longtable = TRUE) %>%
+  kable_styling(bootstrap_options = c("hover", "condensed"), position = "left", full_width = F, font_size = 9, latex_options = c("hold_position", "repeat_header")) %>%
+  row_spec(row = 0, bold = TRUE) %>% 
+  column_spec(column = 1, width = '1.5cm') #%>%
+  #column_spec(column = 2:4, width = "3.5cm")
+  # add_header_above(' ', line = F) %>%
+  # row_spec(0:4, extra_latex_after = "\\arrayrulecolor{white}") 
+```
+
+## Comprehensive examiner
+```{r}
+tibble(
+  Year = c("2020", "2019"),
+  Name = c("Chantal Carillo", "Claudia Turco"),
+  Degree = c(rep("Ph.D", 2)),
+  Program = c("Psychology", "Kinesiology"),
+  Institution = c(rep("McMaster University", 2)),
+  #English = cell_spec(c("C2","C1","C2","C2"), 'latex', color = '#009acd'), # #009acd
+  #French = cell_spec(c("B2","B2","B2","B2"), 'latex', color = '#009acd'), # #4cb8dc
+) %>%
+  kbl(format = "latex", booktabs = TRUE, align = 'l', escape = F, longtable = TRUE) %>%
+  kable_styling(bootstrap_options = c("hover", "condensed"), position = "left", full_width = F, font_size = 9, latex_options = c("hold_position", "repeat_header")) %>%
+  row_spec(row = 0, bold = TRUE) %>% 
+  column_spec(column = 1, width = '1.5cm') #%>%
+  #column_spec(column = 2:4, width = "3.5cm")
+  # add_header_above(' ', line = F) %>%
+  # row_spec(0:4, extra_latex_after = "\\arrayrulecolor{white}") 
+```
+
+# Undergraduate Supervision
+
+## Research assistants
+```{r}
+tibble(
+  Year = c("2021", "2020", "2019"),
+  Name = c("Elizabeth Mitchell", "*Allison Williams", "*Andrew Poskus"),
+  Program = c("Integrated Biomedical Engineering \\& Health Sciences", rep("Kinesiology", 2)),
+  Institution = c(rep("McMaster University", 3)),
+  Type = c("Co-op", rep("NSERC USRA", 2)),
+  #English = cell_spec(c("C2","C1","C2","C2"), 'latex', color = '#009acd'), # #009acd
+  #French = cell_spec(c("B2","B2","B2","B2"), 'latex', color = '#009acd'), # #4cb8dc
+) %>%
+  kbl(format = "latex", booktabs = TRUE, align = 'l', escape = F, longtable = TRUE) %>%
+  kable_styling(bootstrap_options = c("hover", "condensed"), position = "left", full_width = F, font_size = 9, latex_options = c("hold_position", "repeat_header")) %>%
+  footnote(
+    footnote_as_chunk = T,
+    general_title = " ",
+    general = "\\\\tiny *Denotes external funding",
+    escape = F
+  ) %>%
+  row_spec(row = 0, bold = TRUE) %>% 
+  column_spec(column = 1, width = '1.5cm')
+  # add_header_above(' ', line = F) %>%
+  # row_spec(0:4, extra_latex_after = "\\arrayrulecolor{white}") 
+```
+
+## Research practicums
+
+```{r}
+tibble(
+  Year = c(rep("2021", 5), rep("2020", 3), rep("2019", 4), rep("2018", 4)),
+  Name = c("Anita Chaseendran", "Gianna Jeyarajan", "Kenzie Bell", "Ashton Yuen", "Charlie Violin", "Ammaar Jan", "Faran Chaudhry", "Yu (Sarah) Fu", " Andrew Poskus", "Maya El-Zahed", "Grant Yang", "Olena Leshchyshen", "Rita Waseem", "Christian Kleiser", "Chris Li", "Faryal Zahir"),
+  Program = c(rep("Life Sciences", 2), rep("Kinesiology", 4), rep("Health Sciences", 2), rep("Kinesiology", 4), "Life Sciences", rep("Kinesiology", 2), "Biology"),
+  Level = c(rep("III", 5), rep("IV", 2), rep("III", 8), "IV"),
+  Institution = c(rep("McMaster University", 16)),
+  #English = cell_spec(c("C2","C1","C2","C2"), 'latex', color = '#009acd'), # #009acd
+  #French = cell_spec(c("B2","B2","B2","B2"), 'latex', color = '#009acd'), # #4cb8dc
+) %>%
+  kbl(format = "latex", booktabs = TRUE, align = 'l', escape = F, longtable = TRUE) %>%
+  kable_styling(bootstrap_options = c("hover", "condensed"), position = "left", full_width = F, font_size = 9, latex_options = c("hold_position", "repeat_header")) %>%
+  row_spec(row = 0, bold = TRUE) %>% 
+  column_spec(column = 1, width = '1.5cm') #%>%
+  #column_spec(column = 2:4, width = "3.5cm")
+  # add_header_above(' ', line = F) %>%
+  # row_spec(0:4, extra_latex_after = "\\arrayrulecolor{white}") 
+```
+
+## Honours thesis
+
+```{r}
+tibble(
+  Year = c(rep("2021-22", 4), rep("2020-21", 3), rep("2019-20", 3), rep("2016-17", 2), "2015-16", rep("2014-15", 2), rep("2013-14", 3), "2012-13"),
+  Name = c("Raika Bourmand", "Armin Sariaslani", "Katharine Douglas", "Thinzar Soe", "Julianna Marfisi", "Matthew Tobis", "Andrew Poskus", "Sherry Feldman", "Olena Leschyshen", "Noura Balbaa", "Lauren Smail*", "Zachary Yantha*", "Michelle Nguyen*", "Victora Smith*", "Anna Head*", "Bethany Cseke*", "Dylan Klawitter*", "Codie Primeau*", "Helen Chong*"),
+  Program = c("Kinesiology", rep("Life Sciences", 3), rep("Kinesiology", 3), "Life Sciences", rep("Kinesiology", 2), "Psychology", rep("Human Kinetics", 8)),
+  Level = c(rep("IV", 19)),
+  Institution = c(rep("McMaster University", 10), "Queen's University", rep("University of Ottawa", 8)),
+  #English = cell_spec(c("C2","C1","C2","C2"), 'latex', color = '#009acd'), # #009acd
+  #French = cell_spec(c("B2","B2","B2","B2"), 'latex', color = '#009acd'), # #4cb8dc
+) %>%
+  kbl(format = "latex", booktabs = TRUE, align = 'l', escape = F, longtable = TRUE) %>%
+  kable_styling(bootstrap_options = c("hover", "condensed"), position = "left", full_width = F, font_size = 9, latex_options = c("hold_position", "repeat_header")) %>%
+  footnote(
+    footnote_as_chunk = T,
+    general_title = " ",
+    general = "\\\\tiny *Denotes co-supervision",
+    escape = F
+  ) %>%
+  row_spec(row = 0, bold = TRUE) %>% 
+  column_spec(column = 1, width = '1.5cm') #%>%
+  #column_spec(column = 2:4, width = "3.5cm")
+  # add_header_above(' ', line = F) %>%
+  # row_spec(0:4, extra_latex_after = "\\arrayrulecolor{white}") 
+```
+
+# Administrative Responsibilities
+
+```{r}
+tibble(
+  Years = c("2019-2021", "2019-20", "2018-20", "2017-Present", "2012-13"),
+  Institution = c(rep("McMaster University", 4), "University of Ottawa"),
+  Name = c("Department of Kinesiology Awards Committee (Undergraduate and Graduate),
+Member", "Faculty of Science Awards Committee, Member", "Department of Kinesiology Undergraduate Curriculum and Policy", "Department of Kinesiology Graduate Curriculum and Policy", "CUPE 2626 Human Kinetics Union Steward"),
+  #English = cell_spec(c("C2","C1","C2","C2"), 'latex', color = '#009acd'), # #009acd
+  #French = cell_spec(c("B2","B2","B2","B2"), 'latex', color = '#009acd'), # #4cb8dc
+) %>%
+  kbl(format = "latex", booktabs = TRUE, align = 'l', escape = F, longtable = TRUE) %>%
+  kable_styling(bootstrap_options = c("hover", "condensed"), position = "left", full_width = F, font_size = 9, latex_options = c("hold_position", "repeat_header")) %>%
+  row_spec(row = 0, bold = TRUE) %>% 
+  column_spec(column = 3, width = '15cm')
+  # add_header_above(' ', line = F) %>%
+  # row_spec(0:4, extra_latex_after = "\\arrayrulecolor{white}") 
+```
+
+# Lifetime Publications
+
+^+^Denotes trainee
+
+## Current preprints
+
+[2]. ^+^St. Germain L, ^+^Williams A, ^+^Balbaa N, ^+^Poskus A, ^+^Leshchyshen O, Lohse KR, **Carter MJ**. Increased perceptions of autonomy through choice fail to enhance motor skill retention. *PsyArXiv*. doi: [10.1101/2020.09.02.279414](https://doi.org/10.1101/2020.09.02.279414)
+
+[1]. de Brouwer AJ, **Carter MJ**, ^+^Smail, LC, Wolpert DM, Gallivan JP, Flanagan JR. Gaze behaviour reveals flexible encoding of competing reach goals under conditions of target uncertainty. *BioRxiv*. doi: [10.31234/osf.io/s34fg](https://doi.org/10.31234/osf.io/s34fg)
+
+\medskip
+
+## Peer-reviewed journal articles
+
+[23.] ^+^McKay B, Hussien J, **Carter MJ**, Yantha Z, & Ste-Marie DM. (2021). Expecting to teach a novel golf putting task did not enhance retention performance: A replication attempt of Daou and colleagues. *Communications in Kinesiology*, 1: 1-21.
+
+[22.] McKay B, Yantha ZD, Hussien J, **Carter MJ**, & Ste-Marie DM. (In-Press). Meta-analytic findings in the self-controlled motor learning literature: Underpowered, biased, and lacking evidential value. *Meta-Psychology*.
+
+[21]. Barros JAC, ^+^Yantha ZD, **Carter MJ**, Hussein J, Ste-Marie DM (2019). Examining the impact of error estimation on the effects of self-controlled feedback. *Human Movement Science*, 63: 182–198.
+
+[20]. **Carter MJ**, ^+^Smith V, Carlsen AN, Ste-Marie DM (2018). Anodal transcranial direct current stimulation over the primary motor cortex does not enhance the learning benefits of self-controlled feedback schedules. *Psychological Research*, 82: 496–506.
+
+[19]. **Carter MJ**, Ste-Marie DM (2017). Not all choices are created equal: Task-relevant choices enhance motor learning compared to task-irrelevant choices. *Psychonomic Bulletin & Review*, 24:1879–1888.
+
+[18]. Maslovat D, **Carter MJ**, Carlsen AN (2017). Response preparation and execution during intentional bimanual pattern switching. *Journal of Neurophysiology*, 118: 1720–1731.
+
+[17]. **Carter MJ**, Ste-Marie DM (2017). An interpolated activity during the knowledge-of-results delay interval eliminates the learning advantages of self-controlled feedback schedules. *Psychological Research*, 81: 399–406.
+
+[16]. **Carter MJ**, Maslovat D, Carlsen AN (2017). Intentional switches between coordination patterns are faster following anodal-tDCS applied over the supplementary motor area. *Brain Stimulation*, 10:162-164.
+
+[15]. Ste-Marie DM, **Carter MJ**, Law B, Vertes K, ^+^Smith V (2016). Self-controlled learning benefits: Exploring contributions of self-efficacy and intrinsic motivation via path analysis. *Journal of Sport Sciences*, 34: 1650–1656.
+
+[14]. **Carter MJ**, Rathwell S, Ste-Marie DM (2016). Motor skill retention is modulated by strategy choice during self-controlled knowledge of results schedules. *Journal of Motor Learning & Development*, 4: 100-115.
+
+[13]. Patterson JT, Hart A, Hansen S, **Carter MJ**, Ditor D (2016). Measuring investment in learning: Can electrocardiogram provide an indication of cognitive effort during learning?. *Perceptual & Motor Skills*, 122: 375–394.
+
+[12]. **Carter MJ**, ^+^Smith V, Ste-Marie DM (2016). Judgments of learning are significantly higher following feedback on relatively good versus relatively poor trials despite no actual learning differences. *Human Movement Science*, 45: 63–70.
+
+[11]. Martini R, **Carter MJ**, ^+^Yoxon E, Cumming J, Ste-Marie DM (2016). Development and validation of the Movement Imagery Questionnaire for Children (MIQ-C). *Psychology of Sport & Exercise*, 22:190–201.
+
+[10]. Maslovat D, Drummond NM, **Carter MJ**, Carlsen AN (2015). Startle activation is additive with voluntary cortical activation irrespective of stimulus modality. *Neuroscience Letters*, 606: 151–155.
+
+[9]. Maslovat D, Drummond NM, **Carter MJ**, Carlsen AN (2015). Reduced motor preparation during dual-task performance: Evidence from startle. *Experimental Brain Research*, 233: 2673–2683.
+
+[8]. **Carter MJ**, Maslovat D, Carlsen AN (2015). Anodal transcranial direct current stimulation applied over the supplementary motor area delays spontaneous antiphase-to-in-phase transitions. *Journal of Neurophysiology*, 133: 780–785.
+
+[7]. **Carter MJ**, Carlsen AN, Ste-Marie DM (2014).Self-controlled feedback is effective if it is based on
+the learner’s performance: A replication and extension of Chiviacowsky and Wulf (2005). *Frontiers in Psychology*, 5: Article 1325.
+
+[6]. Maslovat D, **Carter MJ**, Kennefick M, Carlsen AN (2014). Startle neural activity is additive with normal cortical initiation-related activation. *Neuroscience Letters*, 558: 164–168.
+
+[5]. Bajema MC, MacKinnon CD, **Carter MJ**, Kennefick M, Perlmutter S, Carlsen AN (2013). Pause time alters the preparation of two-component movements. *Experimental Brain Research*, 231: 85–96.
+
+[4]. Patterson JT, **Carter MJ**, Hansen S (2013). Self-controlled KR schedules: Does repetition order matter? *Human Movement Science*, 31: 1459–1472.
+
+[3]. **Carter MJ**, Patterson JT (2012). Self-controlled knowledge of results: Age-related differences in motor learning, strategies, and error detection. *Human Movement Science*, 31: 1459–1472.
+
+[2]. Patterson JT, **Carter MJ**, Sanli E (2011). Decreasing the proportion of self-control trials during the acquisition period does not compromise the learning advantages in a self-controlled context. *Research Quarterly for Exercise & Sport*, 82: 624–633.
+
+[1]. Patterson JT, **Carter MJ** (2010). Learner regulated knowledge of results during the acquisition of multiple timing goals. *Human Movement Science*, 29: 214–227.
+
+\medskip
+## Book chapters
+
+[1]. Ste-Marie DM, **Carter MJ**, ^+^Yantha ZD (2019). Self-controlled learning: Current findings, theoretical perspectives, and future directions. In N Hodges & AM Williams (eds.) Chapter 7, *Skill acquisition in sport: Research, theory, and practice*, 3rd Edition.
+
+
+# Talks
+
+[8]. Open and reproducible research in a productivity demanding academic world. Motor Learning and Control Online Research Seminar Series, *North American Society for Psychology of Sport & Physical Activity*. Invited team talk with Drs. Diane Ste-Marie, Keith Lohse, and Matthew Miller, Nov 2020.
+
+[7]. Motor learning and self-controlled practice conditions: What we know after 25 years of research. Distinguished lecture series, *Auburn University*. Invited, **Postponed due to Covid-19**.
+
+[6]. Embracing uncertainty and learning to learn. Neuroscience Tutorial, *McMaster University*. Invited, Jan 2019.
+
+[5]. Self-controlled feedback and error estimation. Symposium on "Errors make you better: Behavioural, theoretical, and neurophysiological determinates of error processing in motor learning", *Canadian Society for Psychomotor Learning & Sport Psychology*. Invited, Oct 2018.
+
+[4]. Decision-making for action control and learning. Kinesiology Seminar Series, *McMaster University*. Invited, Sept 2017.
+
+[3]. Cognition and motor skill learning: Insights from learner-controlled protocols. Centre for Neuroscience Studies Seminar Series, *Queen’s University*. Invited, May 2016.
+
+[2]. Self-controlled feedback and motor learning. Franklin Henry Young Scientist Award Presentation, *Canadian Society for Psychomotor Learning & Sport Psychology*. Invited, Oct 2014.
+
+[1]. Cognitive processes underlying the learning advantages of self-controlled feedback schedules. Biokinesiology & Physical Therapy Seminar Series, *University of Southern California*. Invited, March 2015.
+
+# Conference Presentations
+**Presenting author(s)**; ^+^Denotes trainee
+
+## 2021
+[43.] Lokesh R Calalo J, Roth A, Carter MJ, Cashaback JGA. Rapid decision-making during competitive human-human sensorimotor interactions. Talk given at the Annual Meeting of the *Canadian Society for Psychomotor Learning & Sport Psychology*; Virtual Conference due to Covid-19.
+
+[42.] Roth A, Lokesh R, Calalo J, Carter MJ, Cashaback JGA. The influence of reward feedback and error feedback on sensorimotor exploration. Talk given at the Annual Meeting of the *Canadian Society for Psychomotor Learning & Sport Psychology*; Virtual Conference due to Covid-19.
+
+[41.] **^+^St. Germain L**, ^+^McKay B, ^+^Williams A, ^+^Leshchyshen O, ^+^Poskus A, ^+^Feldman S, Cashaback JGA, Carter MJ. Binary feedback prevents a self-controlled learning advantage. Talk given at the Annual Meeting of the *Canadian Society for Psychomotor Learning & Sport Psychology*; Virtual Conference due to Covid-19.
+
+[40]. **^+^Marfisi J**, ^+^St. Germain L, Carter MJ. The persistence of inappropriate outcome variables in motor learning experiments: A follow-up to Fischman (2015). Poster presented at the Annual Meeting of the *North American Society for Psychology of Sport & Physical Activity*; Virtual Conference due to Covid-19.
+
+[39]. **Hussien J**, McKay B, Carter MJ, Yantha Z, Brooks H, Hassin J, Turenne M, Ste-Marie DM. Failure to demonstrate an ‘expecting to teach’ benefit: A replication and extension experiment. Talk given at the Annual Meeting of the *North American Society for Psychology of Sport & Physical Activity*; Virtual Conference due to Covid-19.
+
+\medskip
+## 2020
+[38]. **^+^St. Germain L**, ^+^Williams A, ^+^Poskus A, ^+^Balbaa N, ^+^Leshchyshen O, Lohse KR, Carter MJ. Self-controlled learning: Making a yoked group explicitly aware of being denied choice. Talk given at the Annual Meeting of the *North American Society for Psychology of Sport & Physical Activity*; Virtual Conference due to Covid-19.
+
+\medskip
+## 2019
+[37]. **^+^St. Germain L**, ^+^Leshchyshen O, ^+^Williams A, Carter MJ. Manipulating the characteristics of self-controlled feedback schedules. Talk given at the Annual Meeting of the *Canadian Society for Psychomotor Learning & Sport Psychology*; Vancouver BC, Canada.
+
+[36]. **^+^Williams A**, **^+^St. Germain L**, ^+^Leshchyshen O, Carter MJ. Error estimation abilities and self-
+controlled feedback schedules. Poster presented at the Annual Meeting of the *Canadian Society for Psychomotor Learning & Sport Psychology*; Vancouver BC, Canada.
+
+[35]. **^+^St. Germain L**, **^+^Leshchyshen O**, Carter MJ. Assessing the evidential value of incidental choices
+for motor learning. Poster presented at the Annual Meeting of the *North American Society for Psychology of Sport & Physical Activity*; Baltimore MD, United States.
+
+[34]. **Yantha ZD**, McKay B, Carter MJ, Ste-Marie DM. The effects of choice on motor skill learning: A meta-analysis of self-controlled research findings. Poster presented at the Annual Meeting of the *North American Society for Psychology of Sport & Physical Activity*; Baltimore MD, United States.
+
+\medskip
+## 2018
+[33]. ^+^Zahir F, **^+^St. Germain L**, **Carter MJ**. Inconvenient findings for the "OPTIMAL" theory of motor learning. Poster presented at the Annual Meeting of the *Canadian Society for Psychomotor Learning & Sport Psychology*; Toronto ON, Canada.
+
+\medskip
+## 2017
+[32]. **Gale D**, Carter MJ, Wolpert DM, Gallivan JP, Flanagan JR. Dynamic motor encoding of targets in multiple target tracking. Poster presented at the Annual Meeting of the *Society for Neuroscience*; Washington DC, United States.
+
+[31]. **Carter MJ**, de Brouwer AJ, ^+^Smail L, Wolpert DM, Gallivan JP, Flanagan JR. Gaze behaviour reveals the specification of competiting reach movements under conditions of target uncertainty. Talk given at the Annual Meeting of the *Canadian Society for Psychomotor Learning & Sport Psychology*; St. John’s NF, Canada.
+
+[30]. **^+^Yantha ZD**, Carter MJ, Hussein J, Cotnam HP, Ste-Marie DM. Using error estimation to better understand the advantages of self-controlled practice. Talk given at the Annual Meeting of the *Canadian Society for Psychomotor Learning & Sport Psychology*; St. John’s NF, Canada.
+
+[29]. **Carter MJ**, de Brouwer AJ, ^+^Smail L, Wolpert DM, Gallivan JP, Flanagan JR. Gaze behaviour reveals the specification of competing reach movements. Poster presented at the Annual Meeting of the *Society for the Neural Control of Movement*; Dublin, Ireland.
+
+## 2016
+[28]. ^+^Yantha ZD, **Carter MJ**, Ste-Marie DM. Task-relevant and task-irrelevant choices differentially impact error estimation and motor learning. Talk given at the Annual Meeting of the *Canadian Society for Psychomotor Learning & Sport Psychology*; Waterloo ON, Canada.
+
+[27]. **Carter MJ**, ^+^Elnakouri A, ^+^Yantha ZD, Ste-Marie DM. Not all choices are created equal: The differential impact of task-relevant and task-irrelevant choices on motor learning. Poster presented at the Annual Meeting of the *North American Society for Psychology of Sport & Physical Activity*; Montreal QC, Canada.
+ 
+[26]. **Carter MJ**, Maslovat D, Carlsen AN. A startling acoustic stimulus suggests advance preparation of intentional bimanual switches. Poster presented at the Annual Meeting of the *Society for the Neural Control of Movement*; Montego Bay, Jamaica.
+
+\medskip
+## 2015
+[25]. **Ste-Marie DM**, Carter MJ, Law B, *Smith V, Vertes KA. Self-controlled learning benefits: Exploring contributions of self-efficacy and intrinsic motivation via path analysis. Poster presented at the Annual Meeting of the *European Congress of Sport Psychology*; Bern, Switzerland.
+
+[24]. **Carter MJ**, Carlsen AN, ^+^Smith V, Ste-Marie DM. Anodal transcranial direct current stimulation applied over the primary motor cortex does not enhance the learning benefits of self-controlled KR schedules. Poster presented at the Annual Meeting of the *Canadian Society for Psychomotor Learning & Sport Psychology*; Edmonton AB, Canada.
+
+[23]. **Carter MJ**, ^+^Head CA, Puveendran P, Ste-Marie DM. Eliminating the learning benefits of self-controlled knowledge of results (KR) schedules: The improtance of information processing activities during the KR-delay interval. Talk given at the Annual Meeting of the *North American Society for Psychology of Sport & Physical Activity*; Portland OR, United States.
+
+[22]. **Carter MJ**, Carlsen AN, Ste-Marie DM. Self-controlled feedback is effective if it is based on the learner’s performance: A replicaiton and extension of Chiviacowsky & Wulf (2005). Talk given at the Annual Meeting of the *North American Society for Psychology of Sport & Physical Activity*; Portland OR, United States.
+
+[21]. **Carter MJ**, Maslovat D, Nguyen M, Carlsen AN. The learning of a 90-degree relative phase bimanual coordination pattern: A transcranial direct current stimulation investigation. Poster presented at the Annual Meeting of the *Society for the Neural Control of Movement*; Charleston SC, United States.
+
+\medskip
+## 2014
+[20]. **McKay B**, **Carter MJ**, Rathwell S, Ste-Marie DM.The learning benefits of self-controlled feedback schedules are modulated by strategy choice: A mixed-methods approach. Poster presented at the Annual Meeting of the *Canadian Society for Psychomotor Learning & Sport Psychology*; London ON, Canada.
+
+[19]. **Drummond NM**, Maslovat D, Carter MJ, Chiucchi A, Carlsen AN. Startle activation is additive with voluntary cortical activation irrespective of stimulus modality. Poster presented at the Annual Meeting of the *Canadian Society for Psychomotor Learning & Sport Psychology*; London ON, Canada.
+
+[18]. **Carter MJ**, ^+^Klawitter D, Carlsen AN, Ste-Marie DM. The option of receiving knowledge of results following performance leads to increased motor learning. Talk given at the Annual Meeting of the *North American Society for Psychology of Sport & Physical Activity*; Minneapolis MN, United States.
+
+[17]. **Carter MJ**, **^+^Smith V**, Carlsen AN, Ste-Marie DM. Awareness of "good" versus "poor" feedback content does not mitigate illusions of competency. Poster presented at the Annual Meeting of the *North American Society for Psychology of Sport & Physical Activity*; Minneapolis MN, United States.
+
+[16]. **McKay B**, Carter MJ, Ste-Marie DM. Self-controlled learning: A meta-analysis. Poster presented at the Annual Meeting of the *North American Society for Psychology of Sport & Physical Activity*; Minneapolis MN, United States.
+
+[15]. **Carter MJ**, ^+^Cseke B, Drummond NM, Carlsen AN. Intentional phase transitions in bimanual coordination following tDCS. Poster presented at the Annual Meeting of the *Society for the Neural Control of Movement*; Amsterdam, The Netherlands.
+
+[14]. **Drummond NM**, Scantland-Lebel I, Carter MJ, Maslovat D, Carlsen AN. Startle reveals motor preparatory state associated with differential attentional demands. Poster presented at the Annual Meeting of the *Society for the Neural Control of Movement*; Amsterdam, The Netherlands.
+
+\medskip
+## 2013
+[13]. **Carter MJ**, Drummond NM, Carlsen AN. Anodal tDCS decreases mean relative phase error during anti-phase movements. Poster presented at the Annual Meeting of the *Canadian Society for Psychomotor Learning & Sport Psychology*; Kelowna BC, Canada.
+
+[12]. **Ste-Marie DM**, Law B, **Carter MJ**, Westlund N, Divine A, Martini R. Group versus individual administration of Movement Imagery Questionnaire for Children yields different movement imagery scores. Poster presented at the Annual Meeting of the *Canadian Society for Psychomotor Learning & Sport Psychology*; Kelowna BC, Canada.
+
+[11]. Vertes KA, **Carter MJ**, ^+^Smith V, Ste-Marie DM. Self-controlled video feedback is effective for learning when children adopt higher viewing frequencies. Talk given at the Annual Meeting of the *North American Society for Psychology of Sport & Physical Activity*; New Orleans LA, United States.
+
+[10]. **Carter MJ**, ^+^Yoxon E, Ste-Marie DM, Cumming J, Martini R. The validation of a movement imagery questionnaire for children (MIQ-C). Poster presented at the Annual Meeting of the *North American Society for Psychology of Sport & Physical Activity*; New Orleans LA, United States.
+
+[9]. **Carter MJ**, Maslovat D, Drummond NM, Kennefick M, Carlsen AN. Startle neural activity is additive with normal cortical initiation-related activation. Poster presented at the Annual Meeting of the *Society for the Neural Control of Movement*; San Juan, Puerto Rico.
+
+[8]. **Drummond NM**, Hayduk-Costa G, Carter MJ, Carlsen AN. Bi-hemispheric tDCS over motor cortex does not influence free choice. Poster presented at the Annual Meeting of the *Society for the Neural Control of Movement*; San Juan, Puerto Rico.
+
+\medskip
+## 2012
+[7]. **Carter MJ**, Drummond NM, Ste-Marie DM, Carlsen AN. Providing knowledge of results based on an absolute performance bandwidth results in illusions of competency. Talk given at the Annual Meeting of the *Canadian Society for Psychomotor Learning & Sport Psychology*; Halifax NS, Canada.
+
+[6]. **Hayduk-Costa G**, Drummond NM, Carter MJ, Carlsen AN. Turbocharging the "go"-horse: Anodal tDCS results in early response initiation in an anticipation timing task. Talk given at the Annual Meeting of the *Canadian Society for Psychomotor Learning & Sport Psychology*; Halifax NS, Canada.
+
+[5]. **Kennefick M**, Carter MJ, Bajema MC, Carlsen AN. Dwell time mediates the preparation of single versus multiple component movements. Poster at the Annual Meeting of the *Canadian Society for Psychomotor Learning & Sport Psychology*; Halifax NS, Canada.
+
+\medskip
+## 2011
+[4]. **Carter MJ**, Patterson JT. Self-controlled practice: Learning differences between younger and older adults. Poster presented at the Annual Meeting of the *Canadian Society for Psychomotor Learning & Sport Psychology*; Winnipeg MB, Canada.
+
+\medskip
+## 2010
+[3]. **Carter MJ**, Patterson JT. Self-controlled KR: Does it facilitate an internal representation of a spatial motor task?. Poster presented at the Annual Meeting of the *Canadian Society for Psychomotor Learning & Sport Psychology*; Ottawa ON, Canada.
+
+[2]. **Carter MJ**, Patterson JT, Hansen S. Learner-controlled KR: Does repetition order matter?. Poster presented at the Annual Meeting of the *North American Society for Psychology of Sport & Physical Activity*; Tuscan AZ, United States.
+
+\medskip
+## 2009
+[1]. **Carter MJ**, Patterson JT. Manipulating the structure of a learner-controlled KR practice context: Do the learning advantages persist?. Poster presented at the Annual Meeting of the *Canadian Society for Psychomotor Learning & Sport Psychology*; Toronto ON, Canada.
