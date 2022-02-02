@@ -36,7 +36,7 @@ library(huxtable)
 
 # Research Interests
 
-Decision-making for action; Human-robot and Human-human interactions; Neuroeconomics of action control; Feedback; Aging; Metascience
+Decision-making for action; Joint action (Human-Human and Human-Robot); Feedback; Aging; Metascience
 
 # Education
 
@@ -104,7 +104,7 @@ tibble(
   Years = c(rep("2018-", 2)),
   Name = c("*Laura St. Germain (NSERC PGS-D)", "Kyung-Hyun (Ruth) Kim"),
   Program = c("Kinesiology", "Psychology"),
-  Status = c(rep("In Progress", 2)),
+  Status = c(rep("In Progress", 1), "In Progress - On maternity leave until Aug 2022"),
   #English = cell_spec(c("C2","C1","C2","C2"), 'latex', color = '#009acd'), # #009acd
   #French = cell_spec(c("B2","B2","B2","B2"), 'latex', color = '#009acd'), # #4cb8dc
 ) %>%
@@ -119,7 +119,8 @@ tibble(
   row_spec(row = 0, bold = TRUE) %>% 
   column_spec(column = 1, width = '1.5cm') %>%
   column_spec(column = 2, width = '5cm') %>% 
-  column_spec(column = 3:4, width = "3cm")
+  column_spec(column = 3, width = "2cm") %>% 
+  column_spec(column = 4, width = "7.5cm")
   # add_header_above(' ', line = F) %>%
   # row_spec(0:4, extra_latex_after = "\\arrayrulecolor{white}") 
 ```
@@ -144,21 +145,21 @@ tibble(
 
 # Honours, Awards, Scholarships
 
-2016, Dean’s Award, University of Ottawa, $3000.
+<!-- 2016, Dean’s Award, University of Ottawa, $3000. -->
 
-2015, Michael Smith Foreign Study Supplement, Natural Sciences & Engineering Research Council of Canada, $6000.
+<!-- 2015, Michael Smith Foreign Study Supplement, Natural Sciences & Engineering Research Council of Canada, $6000. -->
 
-2014, Franklin Henry Young Scientist Award (Motor Control and Learning), Canadian Society for Psychomotor Learning & Sport Psychology, $300.
+2014, Franklin Henry Young Scientist Award (Motor Control and Learning), *Canadian Society for Psychomotor Learning & Sport Psychology*.
 
-2013-15, Alexander Graham Bell Canada Graduate Scholarship (Doctoral), Natural Sciences & Engineering Research Council of Canada, $70,000.
+<!-- 2013-15, Alexander Graham Bell Canada Graduate Scholarship (Doctoral), Natural Sciences & Engineering Research Council of Canada, $70,000. -->
 
-2009-10, Frederick Banting and Charles Best Canada Graduate Scholarship (Masters), Canadian Institutes of Health Research, $17,500.
+<!-- 2009-10, Frederick Banting and Charles Best Canada Graduate Scholarship (Masters), Canadian Institutes of Health Research, $17,500. -->
 
-2009-10, Ontario Graduate Scholarship (Masters), Province of Ontario, $15,000 - [Declined]
+<!-- 2009-10, Ontario Graduate Scholarship (Masters), Province of Ontario, $15,000 - [Declined] -->
 
-2008, Undergraduate Student Research Award, Brock University, $3250
+<!-- 2008, Undergraduate Student Research Award, Brock University, $3250 -->
 
-2008, Graduated with First-Class Standing, Brock University
+<!-- 2008, Graduated with First-Class Standing, Brock University -->
 
 # Scholarly and Professional Activities
 
@@ -188,10 +189,10 @@ Biological Psychology; Canadian Journal of Experimental Psychology; Clinical Neu
 ## External grant reviews
 ```{r}
 tibble(
-  Years = "2019-20",
-  Role = "Reviewer",
-  Name = "Natural Sciences and Engineering Research Council of Canada 2020 Discovery
-Grant Competition, Biological Systems and Functions",
+  Years = c("2021-22", "2019-20"),
+  Role = rep("Reviewer", 2),
+  Name = rep("Natural Sciences and Engineering Research Council of Canada Discovery
+Grant Competition, Biological Systems and Functions", 2),
   #English = cell_spec(c("C2","C1","C2","C2"), 'latex', color = '#009acd'), # #009acd
   #French = cell_spec(c("B2","B2","B2","B2"), 'latex', color = '#009acd'), # #4cb8dc
 ) %>%
@@ -245,10 +246,10 @@ tibble(
 
 ```{r}
 tibble(
-  Years = c("2020-", rep("2019-", 2), "2018", rep("2018-20", 2), rep("2017-19", 4)),
+  Years = c("2020-", rep("2019-21", 2), "2018-21", rep("2018-20", 2), rep("2017-19", 4)),
   Name = c("Karishma Ramdeo", "Kristen DeMelo", "Noah Erskine", "Patrick Dans", "Ashley Flemington", "Jacqueline Brillantes", "Mitchell Locke", "Stephen Toepp", "Stevie Foglia", "Kumara Somasundram"),
   Program = c(rep("Kinesiology", 10)),
-  Status = c(rep("In Progress", 3), rep("Completed", 7)),
+  Status = c(rep("In Progress", 1), rep("Completed", 9)),
   #English = cell_spec(c("C2","C1","C2","C2"), 'latex', color = '#009acd'), # #009acd
   #French = cell_spec(c("B2","B2","B2","B2"), 'latex', color = '#009acd'), # #4cb8dc
 ) %>%
@@ -265,7 +266,7 @@ tibble(
 
 ```{r}
 tibble(
-  Years = c("2019", rep("2018-", 2), "2017-19"),
+  Years = c("2019-", rep("2018-", 2), "2017-19"),
   Name = c("Stephen Toepp", "Chantal Carillo", "Claire Tuckey", "Jessica Cappelletto"),
   Program = c("Kinesiology", "Psychology", rep("Kinesiology", 2)),
   Status = c(rep("In Progress", 3), "Completed"),
@@ -374,11 +375,11 @@ tibble(
 
 ```{r}
 tibble(
-  Year = c(rep("2021", 5), rep("2020", 3), rep("2019", 4), rep("2018", 4)),
-  Name = c("Anita Chaseendran", "Gianna Jeyarajan", "Kenzie Bell", "Ashton Yuen", "Charlie Violin", "Ammaar Jan", "Faran Chaudhry", "Yu (Sarah) Fu", " Andrew Poskus", "Maya El-Zahed", "Grant Yang", "Olena Leshchyshen", "Rita Waseem", "Christian Kleiser", "Chris Li", "Faryal Zahir"),
-  Program = c(rep("Life Sciences", 2), rep("Kinesiology", 4), rep("Health Sciences", 2), rep("Kinesiology", 4), "Life Sciences", rep("Kinesiology", 2), "Biology"),
-  Level = c(rep("III", 5), rep("IV", 2), rep("III", 8), "IV"),
-  Institution = c(rep("McMaster University", 16)),
+  Year = c(rep("2022", 2), rep("2021", 6), rep("2020", 3), rep("2019", 4), rep("2018", 4)),
+  Name = c("Vivian Li", "Caroline Jarvi", "Gurlal Gill", "Anita Chaseendran", "Gianna Jeyarajan", "Kenzie Bell", "Ashton Yuen", "Charlie Violin", "Ammaar Jan", "Faran Chaudhry", "Yu (Sarah) Fu", " Andrew Poskus", "Maya El-Zahed", "Grant Yang", "Olena Leshchyshen", "Rita Waseem", "Christian Kleiser", "Chris Li", "Faryal Zahir"),
+  Program = c("Engineering", "Life Sciences", "Kinesiology", rep("Life Sciences", 2), rep("Kinesiology", 4), rep("Health Sciences", 2), rep("Kinesiology", 4), "Life Sciences", rep("Kinesiology", 2), "Biology"),
+  Level = c(rep("III", 4), "IV", rep("III", 3), rep("IV", 2), rep("III", 8), "IV"),
+  Institution = c(rep("McMaster University", 19)),
   #English = cell_spec(c("C2","C1","C2","C2"), 'latex', color = '#009acd'), # #009acd
   #French = cell_spec(c("B2","B2","B2","B2"), 'latex', color = '#009acd'), # #4cb8dc
 ) %>%
@@ -418,6 +419,8 @@ tibble(
   # row_spec(0:4, extra_latex_after = "\\arrayrulecolor{white}") 
 ```
 
+\newpage
+
 # Administrative Responsibilities
 
 ```{r}
@@ -443,7 +446,7 @@ Member", "Faculty of Science Awards Committee, Member", "Department of Kinesiolo
 
 ## Current preprints
 
-[2]. ^+^St. Germain L, ^+^Williams A, ^+^Balbaa N, ^+^Poskus A, ^+^Leshchyshen O, Lohse KR, **Carter MJ**. Increased perceptions of autonomy through choice fail to enhance motor skill retention. *PsyArXiv*. doi: [10.1101/2020.09.02.279414](https://doi.org/10.1101/2020.09.02.279414)
+[2]. ^+^McKay B, **Carter MJ**. Data irregularities across six implicit learning articles: Comments on Lola, Giatis, Pérez-Turpin, and Tzetzis (2021), Lola and Tzetzis (2021), Lola and Tzetzis (2020), Tzetzis and Lola (2015), Lola, Tzetzis, and Zetou (2012), and Tzetzis and Lola (2010). *PsyArXiv*. doi: [https://doi.org/10.31234/osf.io/n8mab](https://doi.org/10.31234/osf.io/n8mab)
 
 [1]. de Brouwer AJ, **Carter MJ**, ^+^Smail, LC, Wolpert DM, Gallivan JP, Flanagan JR. Gaze behaviour reveals flexible encoding of competing reach goals under conditions of target uncertainty. *BioRxiv*. doi: [10.31234/osf.io/s34fg](https://doi.org/10.31234/osf.io/s34fg)
 
@@ -451,9 +454,11 @@ Member", "Faculty of Science Awards Committee, Member", "Department of Kinesiolo
 
 ## Peer-reviewed journal articles
 
-[23.] ^+^McKay B, Hussien J, **Carter MJ**, Yantha Z, & Ste-Marie DM. (2021). Expecting to teach a novel golf putting task did not enhance retention performance: A replication attempt of Daou and colleagues. *Communications in Kinesiology*, 1: 1-21.
+[24.] ^+^St. Germain L, ^+^Williams A, ^+^Balbaa N, ^+^Poskus A, ^+^Leshchyshen O, Lohse KR, **Carter MJ**. (in press). Increased perceptions of autonomy through choice fail to enhance motor skill retention. *Journal of Experimental Psychology: Human Perception and Performance*.
 
-[22.] McKay B, Yantha ZD, Hussien J, **Carter MJ**, & Ste-Marie DM. (In-Press). Meta-analytic findings in the self-controlled motor learning literature: Underpowered, biased, and lacking evidential value. *Meta-Psychology*.
+[23.] ^+^McKay B, Yantha ZD, Hussien J, **Carter MJ**, & Ste-Marie DM. (in press). Meta-analytic findings in the self-controlled motor learning literature: Underpowered, biased, and lacking evidential value. *Meta-Psychology*.
+
+[22.] ^+^McKay B, Hussien J, **Carter MJ**, Yantha Z, & Ste-Marie DM. (2021). Expecting to teach a novel golf putting task did not enhance retention performance: A replication attempt of Daou and colleagues. *Communications in Kinesiology*, 1: 1-21.
 
 [21]. Barros JAC, ^+^Yantha ZD, **Carter MJ**, Hussein J, Ste-Marie DM (2019). Examining the impact of error estimation on the effects of self-controlled feedback. *Human Movement Science*, 63: 182–198.
 
@@ -556,7 +561,8 @@ for motor learning. Poster presented at the Annual Meeting of the *North America
 ## 2018
 [33]. ^+^Zahir F, **^+^St. Germain L**, **Carter MJ**. Inconvenient findings for the "OPTIMAL" theory of motor learning. Poster presented at the Annual Meeting of the *Canadian Society for Psychomotor Learning & Sport Psychology*; Toronto ON, Canada.
 
-\medskip
+<!-- \medskip -->
+\newpage
 ## 2017
 [32]. **Gale D**, Carter MJ, Wolpert DM, Gallivan JP, Flanagan JR. Dynamic motor encoding of targets in multiple target tracking. Poster presented at the Annual Meeting of the *Society for Neuroscience*; Washington DC, United States.
 
